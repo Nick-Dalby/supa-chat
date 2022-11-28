@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.card-body {
+  overflow-x: hidden;
+}

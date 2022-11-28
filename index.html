@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>💬</text></svg>"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link
+      href="https://bootswatch.com/5/lumen/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container pt-5 d-flex flex-column h-100">
+      <ul class="list-unstyled flex-grow-1 overflow-scroll border border-2 rounded-4 " id="messages">
+        <!-- javascript baby -->
+      </ul>
+      <form class="pb-3">
+        <fieldset>
+          <div class="form-group">
+            <label for="username" class="form-label mt-4">Username</label>
+            <input
+              name="username"
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Enter username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="content" class="form-label mt-4">Message</label>
+            <textarea
+              name="content"
+              class="form-control"
+              id="content"
+              rows="2"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mt-2">Send</button>
+        </fieldset>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.2.8/dist/purify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
